@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BicycleConfigurator</string>
+    <string name="text_order_now">Order Now!</string>
+    <string name="text_select_style">Select your Style!</string>
+    <string name="text_bike_mountain">Mountain Bike</string>
+    <string name="text_bike_city">City Bike</string>
+    <string name="text_bike_race">Race Bike</string>
+    <string name="text_customize_bike">Customize your Bike!</string>
+    <string name="text_manufacturer">Manufacturer</string>
+    <string name="text_bike_color">Color</string>
+    <string name="text_bike_framesize">Framesize</string>
+    <string name="text_price">Current price:</string>
+    <string name="text_order_bike">Order Bike</string>
+    <string name="string_format_price">Price: %.2f CHF</string>
+</resources>

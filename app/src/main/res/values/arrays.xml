@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bike_manufacturer">
+        <item>Scott</item>
+        <item>Bianci</item>
+        <item>Trek</item>
+    </string-array>
+
+    <string-array name="bike_color">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="frame_height">
+        <item>50cm</item>
+        <item>55cm</item>
+        <item>60cm</item>
+    </string-array>
+
+</resources>
