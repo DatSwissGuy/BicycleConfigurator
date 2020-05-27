@@ -6,13 +6,15 @@
     <string name="text_bike_city">City Bike</string>
     <string name="text_bike_race">Race Bike</string>
     <string name="text_customize_bike">Customize your Bike!</string>
-    <string name="text_manufacturer">Manufacturer</string>
-    <string name="text_bike_color">Color</string>
-    <string name="text_bike_framesize">Framesize</string>
-    <string name="text_price">Current price:</string>
+    <string name="text_manufacturer">Manufacturer:</string>
+    <string name="text_bike_color">Color:</string>
+    <string name="text_bike_framesize">Framesize:</string>
+    <string name="text_price">Price:</string>
     <string name="text_order_bike">Order Bike</string>
-    <string name="string_format_price">Price: %.2f CHF</string>
-    <string name="string_bike_scott">Scott</string>
-    <string name="string_bike_trek">Trek</string>
-    <string name="string_bike_bianci">Bianci</string>
+    <string name="text_format_price">Price: %.2f CHF</string>
+    <string name="text_bike_scott">Scott</string>
+    <string name="text_bike_trek">Trek</string>
+    <string name="text_bike_bianci">Bianci</string>
+    <string name="text_thankyou">Thank you for your order!</string>
+    <string name="text_bike_type">Bicycle Style:</string>
 </resources>

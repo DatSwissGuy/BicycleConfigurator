@@ -39,6 +39,11 @@ public class RaceBikeOrderActivity extends AppCompatActivity {
 
     public void switchToOrderDetails(View view) {
         Intent intent = new Intent(this, OrderDetailsActivity.class);
+        intent.putExtra(getString(R.string.text_bike_type), getString(R.string.text_bike_race));
+        intent.putExtra(getString(R.string.text_manufacturer), this.spinnerManufacturer.getSelectedItem().toString());
+        intent.putExtra(getString(R.string.text_bike_color), this.spinnerColor.getSelectedItem().toString());
+        intent.putExtra(getString(R.string.text_bike_framesize), this.spinnerFrameSize.getSelectedItem().toString());
+        intent.putExtra(getString(R.string.text_price), this.spinnerCalculator.getTotalPrice());
         startActivity(intent);
     }
 

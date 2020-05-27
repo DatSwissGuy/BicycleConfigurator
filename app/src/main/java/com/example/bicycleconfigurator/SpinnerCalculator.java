@@ -77,7 +77,7 @@ class SpinnerCalculator {
 
     private void updateThatDamnUI() {
         textViewPrice.setText(String.format(Locale.getDefault(),
-                this.activity.getString(R.string.string_format_price),
+                this.activity.getString(R.string.text_format_price),
                 this.price));
     }
 
