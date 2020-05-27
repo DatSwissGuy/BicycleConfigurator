@@ -1,3 +1,6 @@
+/*
+    Courtesy of Silvan Rechsteiner. Excellent idea of creating a helper class for calculations with a spinner. 
+*/
 package com.example.bicycleconfigurator;
 
 import android.app.Activity;
