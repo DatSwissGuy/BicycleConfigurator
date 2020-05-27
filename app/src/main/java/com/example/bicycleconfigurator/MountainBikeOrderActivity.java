@@ -1,7 +1,9 @@
 package com.example.bicycleconfigurator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -11,7 +13,7 @@ public class MountainBikeOrderActivity extends AppCompatActivity {
     private Spinner spinnerManufacturer;
     private Spinner spinnerColor;
     private Spinner spinnerFrameSize;
-    private Calculator calculator;
+    private SpinnerCalculator spinnerCalculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,11 @@ public class MountainBikeOrderActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item);
         this.spinnerFrameSize.setAdapter(spinnerEntriesFramesize);
 
-        this.calculator = new Calculator(this, this.spinnerManufacturer);
+        this.spinnerCalculator = new SpinnerCalculator(this, this.spinnerManufacturer, "Mountain Bike");
+    }
+
+    public void switchToOrderDetails(View view) {
+        Intent intent = new Intent(this, OrderDetailsActivity.class);
+        startActivity(intent);
     }
 }

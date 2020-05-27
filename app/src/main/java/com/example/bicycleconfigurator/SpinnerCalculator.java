@@ -11,21 +11,23 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-class Calculator {
+class SpinnerCalculator {
 
     private float price;
 
     private Activity activity;
     private TextView textViewPrice;
     private Spinner spinner;
+    private String bikeType;
 
-    Calculator(final Activity activity, final Spinner spinner) {
+    SpinnerCalculator(final Activity activity, final Spinner spinner, final String bikeType) {
         this.activity = activity;
         this.textViewPrice = this.activity.findViewById(R.id.textViewTotal);
         this.spinner = spinner;
         this.setListenerForSpinner();
         this.updateThatDamnUI();
         this.initialPrice();
+        this.bikeType = bikeType;
     }
 
     private void setListenerForSpinner() {
@@ -33,18 +35,34 @@ class Calculator {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (spinner.getSelectedItem().toString()) {
-                    case "Scott":
-                        price = 1000f;
-                        break;
-                    case "Bianci":
-                        price = 1200f;
-                        break;
-                    case "Trek":
-                        price = 1500f;
-                        break;
+                if (bikeType.equals("Mountain Bike")) {
+                    switch (spinner.getSelectedItem().toString()) {
+                        case "Scott":
+                            price = 1000f;
+                            break;
+                        case "Bianci":
+                            price = 1200f;
+                            break;
+                        case "Trek":
+                            price = 1500f;
+                            break;
+                    }
+                    updateThatDamnUI();
                 }
-                updateThatDamnUI();
+                if (bikeType.equals("Race Bike")) {
+                    switch (spinner.getSelectedItem().toString()) {
+                        case "Scott":
+                            price = 2000f;
+                            break;
+                        case "Bianci":
+                            price = 2200f;
+                            break;
+                        case "Trek":
+                            price = 2500f;
+                            break;
+                    }
+                    updateThatDamnUI();
+                }
             }
 
             @Override

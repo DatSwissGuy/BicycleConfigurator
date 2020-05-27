@@ -12,4 +12,7 @@
     <string name="text_price">Current price:</string>
     <string name="text_order_bike">Order Bike</string>
     <string name="string_format_price">Price: %.2f CHF</string>
+    <string name="string_bike_scott">Scott</string>
+    <string name="string_bike_trek">Trek</string>
+    <string name="string_bike_bianci">Bianci</string>
 </resources>
